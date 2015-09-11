@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main {
+	width: 900px;
+	margin: auto;
+}
+
+#home, #products, #events, #cafe, #service, #order, #support, #about {
+	color: #000;
+	background-color: #6CC;
+	display: block;
+	border-bottom: solid medium #000;
+}
+
+.home, .products, .events, .cafe, .service, .order, .support, .about {
+	color: #000;
+	opacity: 0.4;	
+	display : block;
+}
+
+.home:hover, .products:hover, .events:hover, .cafe:hover, .service:hover, .order:hover, .support:hover, .about:hover{
+	color: #000;
+	opacity: 1.0;
+	border-bottom: solid medium #000;
+}
+
+.home_heading {
+	font-family: "Trebuchet MS";
+	font-size: 24px;
+	color: #333;
+	text-align: center;
+}
+.home_font {
+	font-size: 22px;
+	color: #666;
+	font-family: "Century Gothic";
+	text-align: center;
+}
+.product_border {
+	border: thin solid #000;
+	-webkit-border-radius: 10px;
+	text-align: center;
+}
+
+#home_font_link {
+	color: #000;
+}
+
+.ban_temp {
+	background-color: #FFF;
+	font-family: "Century Gothic";
+	font-size: 18px;
+	color: #FFF;
+	text-align: center;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+.footer {
+	font-family: "Myriad Pro";
+	font-size: 18px;
+	color: #000;
+	text-align: right;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+.footer_follow {
+	font-family: Calibri;
+	color: #FFF;
+	background-color: #666;
+	text-indent: 1cm;
+	font-size: 24px;
+}
