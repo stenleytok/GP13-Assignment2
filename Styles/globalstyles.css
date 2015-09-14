@@ -90,3 +90,8 @@
 .fieldset_service{
 	border-radius: 10px;
 }
+.Text {
+	font-family: "Sinhala MN", "Source Code Pro";
+	font-size: 18px;
+	text-align: left;
+}
