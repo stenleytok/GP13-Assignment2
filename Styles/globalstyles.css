@@ -7,10 +7,9 @@
 }
 
 #home, #products, #events, #cafe, #service, #order, #support, #about {
-	color: #000;
-	background-color: #6CC;
+	color: #09F;
 	display: block;
-	border-bottom: solid medium #000;
+	border-bottom: solid 2px #09F;
 }
 
 .home, .products, .events, .cafe, .service, .order, .support, .about {
@@ -20,9 +19,8 @@
 }
 
 .home:hover, .products:hover, .events:hover, .cafe:hover, .service:hover, .order:hover, .support:hover, .about:hover{
-	color: #000;
+	color: #09F;
 	opacity: 1.0;
-	border-bottom: solid medium #000;
 }
 
 .home_heading {
@@ -48,26 +46,32 @@
 }
 
 .ban_temp {
-	background-color: #FFFFFF;
 	font-family: "Century Gothic";
-	font-size: 18px;
-	color: #FFF;
+	font-size: 16px;
+	color: #000;
 	text-align: center;
-	border-bottom-width: thin;
+	border-bottom-width: 1.5px;
 	border-bottom-style: solid;
 	border-bottom-color: #000;
-	border-top-width: thin;
+	border-top-width: 1.5px;
 	border-top-style: solid;
 	border-top-color: #000;
 }
 .footer {
 	font-family: "Myriad Pro";
 	font-size: 18px;
-	color: #000;
-	text-align: right;
+	color: #FFFFFF;
+	text-align: center;
 	border-top-width: thin;
-	border-top-style: solid;
-	border-top-color: #000;
+	border-top-style: none;
+	border-top-color: #FFF;
+	background-color: #000;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none;
 }
 .footer_follow {
 	font-family: Calibri;
@@ -89,4 +93,16 @@
 }
 .fieldset_service{
 	border-radius: 10px;
+}
+.read_more {
+	border: thin solid #000;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+	background-color: #F00;
+	color: #FFF;
+}
+
+.read_more:hover {
+	background-color: #FF726A;	
 }
