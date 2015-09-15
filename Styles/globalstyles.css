@@ -94,13 +94,19 @@
 .fieldset_service{
 	border-radius: 10px;
 }
-.read_more {
+.read_more, .read_more:link, .read_more:visited { 
 	border: thin solid #000;
 	border-radius: 10px;
 	padding: 10px;
 	margin: 10px;
 	background-color: #F00;
 	color: #FFF;
+	display: inline-block;
+}
+
+.read_more_font {
+	color: #FFF;	
+	display: block;
 }
 
 .read_more:hover {
