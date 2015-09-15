@@ -94,6 +94,7 @@
 .fieldset_service{
 	border-radius: 10px;
 }
+
 .read_more, .read_more:link, .read_more:visited { 
 	border: thin solid #000;
 	border-radius: 10px;
@@ -112,3 +113,10 @@
 .read_more:hover {
 	background-color: #FF726A;	
 }
+
+.Text {
+	font-family: "Sinhala MN", "Source Code Pro";
+	font-size: 18px;
+	text-align: left;
+}
+
