@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://simplecartjs.org/documentation -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Javascript Shopping Cart - simpleCart(js) </title>
+	
+	<!--SEO & Social Content-->
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="http://simplecartjs.org/sitemap.xml">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile viewport -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- CSS-->
+	<link rel="stylesheet" href="./simplecart jd documentation_files/style.css">
+	<link rel="stylesheet" type="text/css" href="./simplecart jd documentation_files/jquery.snippet.css">
+	<link rel="stylesheet" type="text/css" href="./simplecart jd documentation_files/uniform.dark.css">
+	
+
+	<!-- All JavaScript at the bottom, except for Modernizr -->
+	<script async="" src="./simplecart jd documentation_files/ga.js"></script><script src="./simplecart jd documentation_files/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+	<div id="container" class="clearfix">
+		<h1><a href="http://simplecartjs.org/">simpleCart(js)</a></h1>
+		<div id="content">
+			<header>
+				<nav id="mainNavigation">
+					<ul>
+						<li><a href="http://simplecartjs.org/features">Features</a></li>
+<li class="here"><a href="./simplecart jd documentation_files/simplecart jd documentation.html">Documentation</a></li>
+<li class="last"><a href="http://simplecartjs.org/tutorials">Tutorials</a></li>
+
+					</ul>
+				</nav>
+				<div class="cartInfo"><span class="simpleCart_quantity"></span> items</div>
+				<div id="cartPopover">
+					<div id="triangle">▲</div>
+					<div class="simpleCart_items"></div>
+					<div id="cartData" class="clearfix">
+						<div class="left"><strong>Items: </strong><span class="simpleCart_quantity"></span></div>
+						<div class="right"><strong>Total: </strong><span class="simpleCart_total"></span></div>
+					</div>
+					<div id="popoverButtons" class="clearfix">
+						<a href="http://simplecartjs.org/cart/" class="hudbtn left">View</a>
+						<a href="javascript:;" class="simpleCart_checkout hudbtn primary right">Checkout</a>
+					</div>
+				</div><!--End #cartPopover-->
+			</header><!--End header-->
+
+<div class="faux clearfix">
+	<nav class="sideNav">	
+		
+				<h4>Quick Start Guide</h4>
+				<ul>
+					
+							<li><a href="http://simplecartjs.org/documentation/displaying_cart_data">Displaying Cart Data</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/shipping">Shipping</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/currency">Currency</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/cart_columns">Cart Columns</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/the_shelf">The Shelf</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/setup_initialization">Setup/Initialization</a></li>
+					
+				</ul>
+		
+				<h4>Events</h4>
+				<ul>
+					
+							<li><a href="http://simplecartjs.org/documentation/ready-event">ready</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/update-event">update</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/aftersave-event">afterSave</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/beforesave-event">beforeSave</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/load-event">load</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/beforecheckout-event">beforeCheckout</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/beforeremove-event">beforeRemove</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/afteradd-event">afterAdd</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/beforeadd-event">beforeAdd</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/using_events">Using Events</a></li>
+					
+				</ul>
+		
+				<h4>Checkout Methods</h4>
+				<ul>
+					
+							<li><a href="http://simplecartjs.org/documentation/sendform-checkout">SendForm</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/amazon_payments">Amazon Payments</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/google_checkout">Google Checkout</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/paypal">PayPal</a></li>
+					
+				</ul>
+		
+				<h4>Function Reference</h4>
+				<ul>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-equals">.Item.equals</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-get">.Item.get</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-set">.Item.set</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-total">.Item.total</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-id">.Item.id</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-price">.Item.price</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-quantity">.Item.quantity</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-remove">.Item.remove</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-decrement">.Item.decrement</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-increment">.Item.increment</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-underscore">.Item._</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-update">.update</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-trigger">.trigger</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-total">.total</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-tocurrency">.toCurrency</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-taxrate">.taxRate</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-tax">.tax</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-shipping">.shipping</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-load">.load</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-save">.save</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-ready">.ready</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-quantity">.quantity</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item">.Item</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-has">.has</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-grandtotal">.grandTotal</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-find">.find</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-extend">.extend</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-empty">.empty</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-element-attr">.ELEMENT.attr</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-element-val">.ELEMENT.val</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-element-html">.ELEMENT.html</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-element-text">.ELEMENT.text</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-element-underscore">.ELEMENT._</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-each">.each</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-currency">.currency</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-copy">.copy</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-chunk">.chunk</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-checkout-sendform">.checkout.SendForm</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-checkout-paypal">.checkout.PayPal</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-checkout-googlecheckout">.checkout.GoogleCheckout</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-checkout-amazonpayments">.checkout.AmazonPayments</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-checkout">.checkout</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-bindoutlets">.bindOutlets</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-bindinputs">.bindInputs</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-bind">.bind</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-element">.ELEMENT</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-add">.add</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-dollar-sign-create">.$create</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-dollar-sign">.$</a></li>
+					
+				</ul>
+		
+				<h4>Core</h4>
+				<ul>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-update">.update</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-total">.total</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-taxrate">.taxRate</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-tax">.tax</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-shipping">.shipping</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-load">.load</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-save">.save</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-ready">.ready</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-quantity">.quantity</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-has">.has</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-grandtotal">.grandTotal</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-find">.find</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-extend">.extend</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-empty">.empty</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-currency">.currency</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-checkout">.checkout</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-element">.ELEMENT</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-add">.add</a></li>
+					
+				</ul>
+		
+				<h4>Checkout</h4>
+				<ul>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-checkout-sendform">.checkout.SendForm</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-checkout-paypal">.checkout.PayPal</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-checkout-googlecheckout">.checkout.GoogleCheckout</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-checkout-amazonpayments">.checkout.AmazonPayments</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-checkout">.checkout</a></li>
+					
+				</ul>
+		
+				<h4>Event</h4>
+				<ul>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-trigger">.trigger</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-ready">.ready</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-bindoutlets">.bindOutlets</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-bindinputs">.bindInputs</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-bind">.bind</a></li>
+					
+				</ul>
+		
+				<h4>Items</h4>
+				<ul>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-equals">.Item.equals</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-get">.Item.get</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-set">.Item.set</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-total">.Item.total</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-id">.Item.id</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-price">.Item.price</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-quantity">.Item.quantity</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-remove">.Item.remove</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-decrement">.Item.decrement</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-increment">.Item.increment</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item-underscore">.Item._</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-item">.Item</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-has">.has</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-add">.add</a></li>
+					
+				</ul>
+		
+				<h4>UI &amp; DOM Manipulation</h4>
+				<ul>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-update">.update</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-element-attr">.ELEMENT.attr</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-element-val">.ELEMENT.val</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-element-html">.ELEMENT.html</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-element-text">.ELEMENT.text</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-element-underscore">.ELEMENT._</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-bindoutlets">.bindOutlets</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-bindinputs">.bindInputs</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-element">.ELEMENT</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-dollar-sign-create">.$create</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-dollar-sign">.$</a></li>
+					
+				</ul>
+		
+				<h4>Utilities</h4>
+				<ul>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-tocurrency">.toCurrency</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-find">.find</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-each">.each</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-copy">.copy</a></li>
+					
+							<li><a href="http://simplecartjs.org/documentation/simplecart-chunk">.chunk</a></li>
+					
+				</ul>
+		
+	</nav>
+	<div id="main">
+					
+					<h2 class="pageTitle">Displaying Cart Data</h2>
+					<p>You can display simpleCart(js) data anywhere on the page by adding class names to your markup.  Below is a full list of simpleCart(js) output/input classes</p>
+
+<div class="snippet-container" style="undefined;"><div class="sh_kwrite snippet-wrap"><div class="snippet-menu sh_sourceCode" style="display: none;"><pre><a class="snippet-copy sh_url" href="http://simplecartjs.org/documentation#">copy</a><a class="snippet-text sh_url" href="http://simplecartjs.org/documentation#">text</a><a class="snippet-window sh_url" href="http://simplecartjs.org/documentation#">pop-up</a></pre><div class="snippet-clipboard" style="position: absolute; left: 0px; top: 0px; width: 35px; height: 13px; z-index: 99;"><embed id="ZeroClipboardMovie_1" src="/assets/js/libs/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="35" height="13" name="ZeroClipboardMovie_1" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=35&amp;height=13" wmode="transparent"></div></div><pre class="html sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_comment">&lt;!-- create a checkout button --&gt;</span></li><li><span class="sh_keyword">&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"javascript:;"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"simpleCart_checkout"</span><span class="sh_keyword">&gt;&lt;/a&gt;</span></li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_comment">&lt;!-- button to empty the cart --&gt;</span></li><li><span class="sh_keyword">&lt;a</span> <span class="sh_type">href</span><span class="sh_symbol">=</span><span class="sh_string">"javascript:;"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"simpleCart_empty"</span><span class="sh_keyword">&gt;&lt;/a&gt;</span></li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_comment">&lt;!-- show the cart --&gt;</span></li><li><span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"simpleCart_items"</span><span class="sh_keyword">&gt;&lt;/div&gt;</span></li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_comment">&lt;!-- cart total (ex. $23.11)--&gt;</span></li><li><span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"simpleCart_total"</span><span class="sh_keyword">&gt;&lt;/div&gt;</span></li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_comment">&lt;!-- cart quantity (ex. 3) --&gt;</span></li><li><span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"simpleCart_quantity"</span><span class="sh_keyword">&gt;&lt;/div&gt;</span></li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_comment">&lt;!-- tax cost (ex. $1.38) --&gt;</span></li><li><span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"simpleCart_tax"</span><span class="sh_keyword">&gt;&lt;/div&gt;</span></li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_comment">&lt;!-- tax rate (ex. %0.6) --&gt;</span></li><li><span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"simpleCart_taxRate"</span><span class="sh_keyword">&gt;&lt;/div&gt;</span></li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_comment">&lt;!-- shipping (ex. $5.00) --&gt;</span></li><li><span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"simpleCart_shipping"</span><span class="sh_keyword">&gt;&lt;/div&gt;</span></li><li><span style="display:none;">&nbsp;</span></li><li><span class="sh_comment">&lt;!-- grand total, including tax and shipping (ex. $28.49) --&gt;</span></li><li><span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"simpleCart_grandTotal"</span><span class="sh_keyword">&gt;&lt;/div&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;">&lt;!-- create a checkout button --&gt;
+&lt;a href="javascript:;" class="simpleCart_checkout"&gt;&lt;/a&gt;
+
+&lt;!-- button to empty the cart --&gt;
+&lt;a href="javascript:;" class="simpleCart_empty"&gt;&lt;/a&gt;
+
+&lt;!-- show the cart --&gt;
+&lt;div class="simpleCart_items"&gt;&lt;/div&gt;
+
+&lt;!-- cart total (ex. $23.11)--&gt;
+&lt;div class="simpleCart_total"&gt;&lt;/div&gt;
+
+&lt;!-- cart quantity (ex. 3) --&gt;
+&lt;div class="simpleCart_quantity"&gt;&lt;/div&gt;
+
+&lt;!-- tax cost (ex. $1.38) --&gt;
+&lt;div class="simpleCart_tax"&gt;&lt;/div&gt;
+
+&lt;!-- tax rate (ex. %0.6) --&gt;
+&lt;div class="simpleCart_taxRate"&gt;&lt;/div&gt;
+
+&lt;!-- shipping (ex. $5.00) --&gt;
+&lt;div class="simpleCart_shipping"&gt;&lt;/div&gt;
+
+&lt;!-- grand total, including tax and shipping (ex. $28.49) --&gt;
+&lt;div class="simpleCart_grandTotal"&gt;&lt;/div&gt;
+
+</pre></div></div>
+
+
+			
+			</div>
+</div>
+		<footer>
+			<h1 class="left"><a href="http://simplecartjs.org/">simpleCart(js)</a></h1>
+			<div class="right">
+				<a href="http://github.com/wojodesign/simplecart-js" target="_blank" class="icnGithub">Github</a>
+				&nbsp;&nbsp;
+				<a href="http://twitter.com/simplecartjs" target="_blank" class="icnTwitter">Twitter</a>
+			</div>
+		</footer>
+	</div><!-- End #content -->
+</div><!-- End #container -->
+
+<!-- JavaScript -->
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="./simplecart jd documentation_files/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+<script src="./simplecart jd documentation_files/simpleCart.js"></script>
+<script src="./simplecart jd documentation_files/jquery.snippet.js"></script>
+<script defer="" src="./simplecart jd documentation_files/plugins.js"></script>
+<script defer="" src="./simplecart jd documentation_files/main.js"></script>
+
+<!--*****************************************************
+simpleCart(js) Demo Code.
+*********************************************************-->
+<script>
+	simpleCart({
+		//Setting the Cart Columns for the sidebar cart display.
+		cartColumns: [
+			//A custom cart column for putting the quantity and increment and decrement items in one div for easier styling.
+			{ view: function(item, column){
+				return	"<span>"+item.get('quantity')+"</span>" + 
+						"<div>" +
+							"<a href='javascript:;' class='simpleCart_increment'><img src='/assets/images/increment.png' title='+1' alt='arrow up'/></a>" +
+							"<a href='javascript:;' class='simpleCart_decrement'><img src='/assets/images/decrement.png' title='-1' alt='arrow down'/></a>" +
+						"</div>";
+			}, attr: 'custom' },
+			//Name of the item
+			{ attr: "name" , label: false },
+			//Subtotal of that row (quantity of that item * the price)
+			{ view: 'currency', attr: "total" , label: false  }
+		],
+		cartStyle: 'div'
+	});
+	
+</script>
+
+<!-- Change UA-XXXXX-X to be your site's ID -->
+<script>
+	var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview'], ['_trackPageLoadTime']];
+	(function(d, t) {
+		var g = d.createElement(t),
+		s = d.getElementsByTagName(t)[0];
+		g.async = true;
+		g.src = '//www.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s);
+	})(document, 'script');
+</script>
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6. -->
+<!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>
