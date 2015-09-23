@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Template2.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+	<script>/*<![CDATA[*/!window.QUnit && document.write('<script src="inc/qunit.js"><\/script>')/*]]>*/</script>
+	<script src="http://swarm.simplecartjs.com/js/inject.js"></script>
+	
+    <!-- Your project file goes here -->  
+	<script>/*<![CDATA[*/
+	
+	if( QUnit.urlParams.lib && QUnit.urlParams.ver ){
+		document.write('<script src="https://ajax.googleapis.com/ajax/libs/'+ 
+					QUnit.urlParams.lib + '/' + 
+					QUnit.urlParams.ver + '/' + 
+					QUnit.urlParams.lib + '.js"><\/script>');
+	} else {
+		document.write('<script src="inc/jquery.1.6.1.min.js"><\/script>');
+	}
+	
+	if( QUnit.urlParams.commit ){
+		document.write('<script src="inc/get-raw-javascript.php?file=https://raw.github.com/wojodesign/simplecart-js/'+ QUnit.urlParams.commit +'/\GP13-Assignment2/simpleCart.js"><\/script>');
+		document.write('<script src="inc/get-raw-javascript.php?file=https://raw.github.com/wojodesign/simplecart-js/'+ QUnit.urlParams.commit +'/\GP13-Assignment2/test.core.js"><\/script>');
+	} else {
+		document.write('<script src="simpleCart.js"><\/script>');
+		document.write('<script type="text/javascript" src="test.core.js"><\/script>');
+	}
+	/*]]>*/</script>
+
+	
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="Styles/globalstyles.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+body {
+	background-color: #FFFFFF;
+	background-image: url();
+}
+</style>
+<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Delius' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body id="main">
+<table width="900" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th height="33" colspan="9" scope="col"><a href="index.html"><img src="Images/New%20logo.png" width="190" height="65" align="left" /></a><img src="Images/cart.png" width="36" height="29" align="right" /></th>
+  </tr>
+  <tr>
+  	<!-- InstanceBeginEditable name="EditRegion4" -->
+    <td width="100" height="21" class="ban_temp"><a href="index.html" class="home">Home</a></td>
+    <td width="100" class="ban_temp"><a href="products.html" class="products">Products</a></td>
+    <td width="100" class="ban_temp"><a href="events.html" class="events">Events</a></td>
+    <td width="100" class="ban_temp"><a href="cafe.html" class="cafe">Cafe</a></td>
+    <td width="100" class="ban_temp"><a href="service.html" class="service">Service</a></td>
+    <td width="100" class="ban_temp"><a href="order.html" class="order">Cart</a></td>
+    <td width="100" class="ban_temp"><a href="support.html" class="support">Support</a></td>
+    <td width="100" class="ban_temp"><a href="about.html" class="about">About Us</a></td>
+    <!-- InstanceEndEditable -->
+  </tr>
+</table>
+<p></p>
+<!-- InstanceBeginEditable name="EditRegion3" -->	<p>
+	Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
+	<br />
+	<a href="javascript:;" class="simpleCart_empty">empty cart</a>
+	<br />
+	</p>
+
+
+	<ul>
+	   Sublime Collection
+		<div class="simpleCart_shelfItem">
+			<p class="item_name">Napoleon &amp; Marie</p>
+			<span class="item_price">$16.50</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+			<input type="button" class="item_add" value="Add to cart" />
+	  </div>
+
+
+		<div class="simpleCart_shelfItem">
+			<p class="item_name">Dwight &amp; Elizabeth</p>
+			<span class="item_price">$12.00</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+			<input type="button" class="item_add" value="Add to cart" />
+	  </div>
+
+		<div class="simpleCart_shelfItem">
+			<p class="item_name">Matilda</p>
+			<span class="item_price">$15.00</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+			<input type="button" class="item_add" value="Add to cart" />
+	  </div>
+
+		<div class="simpleCart_shelfItem">
+			<p class="item_name">Johnny &amp; June</p>
+			<span class="item_price">$16.50</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+			<input type="button" class="item_add" value="Add to cart" />
+	  </div>
+
+	</ul>
+
+	<ul>
+		 Jeans Collection
+		 <div class="simpleCart_shelfItem">
+			<p class="item_name">Mick &amp; Bianca</p>
+			<span class="item_price">$22.40</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+		   <input type="button" class="item_add" value="Add to cart" />
+	  </div>
+
+
+		<div class="simpleCart_shelfItem">
+			<p class="item_name">Frida &amp; Diego</p>
+			<span class="item_price">$22.45</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+		  <input type="button" class="item_add" value="Add to cart" />
+	  </div>
+
+		<div class="simpleCart_shelfItem">
+			<p class="item_name">Kurt &amp; Courney</p>
+			<span class="item_price">$22.45</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+		  <input type="button" class="item_add" value="Add to cart" />
+	  </div>
+
+		<div class="simpleCart_shelfItem">
+			<p class="item_name">Dali &amp; Gala</p>
+			<span class="item_price">$25.50</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+		  <input type="button" class="item_add" value="Add to cart" />
+	  </div>
+
+		<div class="simpleCart_shelfItem">
+			<p class="item_name">Jimi &amp; Janis</p>
+			<span class="item_price">$25.50</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+		  <input type="button" class="item_add" value="Add to cart" />
+	  </div>
+</ul>
+
+<ul>
+		 Jeans Collection
+		 <div class="simpleCart_shelfItem">
+			<p class="item_name">Jordan</p>
+			<span class="item_price">$16.20</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+			<input type="button" class="item_add" value="Add to cart" />
+	  </div>
+
+
+		<div class="simpleCart_shelfItem">
+			<p class="item_name">Michael</p>
+			<span class="item_price">$20.40</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+			<input type="button" class="item_add" value="Add to cart" />
+	  </div>
+
+		<div class="simpleCart_shelfItem">
+			<p class="item_name">Suzy</p>
+			<span class="item_price">$18.50</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+			<input type="button" class="item_add" value="Add to cart" />
+	  </div>
+
+		<div class="simpleCart_shelfItem">
+			<p class="item_name">Sarah</p>
+			<span class="item_price">$18.45</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+			<input type="button" class="item_add" value="Add to cart" />
+	  </div>
+
+		<div class="simpleCart_shelfItem">
+			<p class="item_name">Parker</p>
+			<span class="item_price">$16.20</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+			<input type="button" class="item_add" value="Add to cart" />
+	  </div>
+      
+      		<div class="simpleCart_shelfItem">
+			<p class="item_name">Marcus</p>
+			<span class="item_price">$20.40</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+			<input type="button" class="item_add" value="Add to cart" />
+	  </div>
+
+		<div class="simpleCart_shelfItem">
+			<p class="item_name">Joyce</p>
+			<span class="item_price">$18.45</span>
+			<select size="1" class="item_Size">
+				<option value="S">S</option>
+				<option value="M">M</option>
+				<option value="L">L</option>	
+			</select>		
+			<input type="text" class="item_quantity" value="1" size="1" maxlength="1" />
+			<input type="button" class="item_add" value="Add to cart" />
+	  </div>
+	</ul>
+
+	<div class="simpleCart_items" >
+	</div>
+
+	<br />
+	SubTotal: <span id="simpleCart_total" class="simpleCart_total"></span> <br />
+	Shipping: <span id="simpleCart_shipping" class="simpleCart_shipping"></span> <br />
+	-----------------------------<br />
+	Total: <span id="simpleCart_grandTotal" class="simpleCart_grandTotal"></span> <br />
+
+<form action="paymentdetail.html" method="get">
+<button type="submit">Submit</button><br>
+</form>
+	
+<!-- InstanceEndEditable -->
+<p>&nbsp;</p>
+<table width="900" height="28" border="0" cellpadding="0" cellspacing="0" class="footer">
+  <tr>
+    <th colspan="3" class="footer" scope="col"><div align="right" class="footer">©FRIAS 2015. All rights reserved. </div></th>
+  </tr>
+  <tr>
+    <th width="440" scope="col">&nbsp;</th>
+    <th width="28" class="footer" scope="col">&nbsp;</th>
+    <th width="432" scope="col">&nbsp;</th>
+  </tr>
+  <tr>
+    <th scope="col"><img src="Images/facebook.png" width="20" height="30" align="right" /></th>
+    <th class="footer" scope="col">&nbsp;</th>
+    <th scope="col"><img src="Images/twitter.png" width="30" height="30" align="left" /></th>
+  </tr>
+</table>
+</body>
+<!-- InstanceEnd --></html>
