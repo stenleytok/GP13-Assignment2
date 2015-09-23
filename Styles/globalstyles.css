@@ -1,6 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 
+h1 {
+	font-family: 'Delius', cursive;
+}
+
+p {
+	font-family: 'Delius', cursive;
+}
+
+.SpecialForm {
+	font-family: 'Delius', cursive;
+}
+
 #main {
 	width: 900px;
 	margin: auto;
@@ -11,12 +23,16 @@
 	color: #09F;
 	display: block;
 	border-bottom: solid 2px #09F;
+	font-family: 'Bangers', cursive;
+	font-size: 19px;
 }
 
 .home, .products, .events, .cafe, .service, .order, .support, .about {
 	color: #000;
 	opacity: 0.4;	
 	display : block;
+	font-family: 'Bangers', cursive;
+	font-size: 19px;
 }
 
 .home:hover, .products:hover, .events:hover, .cafe:hover, .service:hover, .order:hover, .support:hover, .about:hover{
@@ -60,8 +76,8 @@
 	border-top-color: #000;
 }
 .footer {
-	font-family: "Myriad Pro";
-	font-size: 18px;
+	font-family: 'Old Standard TT', serif;
+	font-size: 15px;
 	color: #FFFFFF;
 	text-align: center;
 	border-top-width: thin;
@@ -118,7 +134,7 @@
 }
 
 .Text {
-	font-family: "Sinhala MN", "Source Code Pro";
+	font-family: 'Delius', cursive;
 	font-size: 18px;
 	text-align: left;
 }
