@@ -97,7 +97,7 @@
 	background-color: #FFF;
 }
 .IntroQuote {
-	font-family: "Heiti TC Light";
+	font-family: 'Delius', cursive;
 	font-size: 15px;
 	font-style: italic;
 	font-weight: bold;
@@ -105,10 +105,10 @@
 	text-decoration: underline;
 }
 .ProductDetails {
-	font-family: "Sinhala MN", "Source Code Pro";
+	font-family: 'Delius', cursive;
 	font-size: 18px;
 }
 .IntroProduct {
-	font-family: "Sinhala MN", "Source Code Pro";
+	font-family: 'Delius', cursive;
 	font-size: 14px;
 }
