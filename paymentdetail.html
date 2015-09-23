@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Untitled Document</title>
+<title>FRIAS | Payment Detail</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -44,7 +44,7 @@ body {
     <td width="100" class="ban_temp"><a href="events.html" class="events">Events</a></td>
     <td width="100" class="ban_temp"><a href="cafe.html" class="cafe">Cafe</a></td>
     <td width="100" class="ban_temp"><a href="service.html" class="service">Service</a></td>
-    <td width="100" class="ban_temp"><a href="orderform.html" class="order">Cart</a></td>
+    <td width="100" class="ban_temp"><a href="order.html" class="order">Cart</a></td>
     <td width="100" class="ban_temp"><a href="support.html" class="support">Support</a></td>
     <td width="100" class="ban_temp"><a href="about.html" class="about">About Us</a></td>
     <!-- InstanceEndEditable -->
@@ -72,20 +72,14 @@ body {
         <td><input type="text" name="Email" id="Email" value="example@gmail.com"/></td>
       </tr>
       <tr>
-        <td height="22">&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
         <td align="left" valign="top">Address 1</td>
         <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <td><textarea name="address2" id="address2" cols="45" rows="5"></textarea></td>
       </tr>
       <tr>
         <td height="66" align="left" valign="top">Address 2</td>
         <td>&nbsp;</td>
-        <td><textarea name="address2" id="address2" cols="45" rows="5"></textarea>
-          <textarea name="address1" id="address1" cols="45" rows="5"></textarea></td>
+        <td><textarea name="address1" id="address1" cols="45" rows="5"></textarea></td>
       </tr>
       <tr>
         <td>City</td>
@@ -114,45 +108,46 @@ body {
   <form id="form3" name="form3" method="post" action="">
     <table width="731" border="0">
       <tr>
-        <td width="196" height="60">Payment Type</td>
-        <td width="22"><input type="radio" name="Payment" value="radio" id="Payment_0" /></td>
+        <td width="165" height="60">Payment Type</td>
+        <td width="21"><input type="radio" name="Payment" value="radio" id="Payment_0" /></td>
         <td width="200"><table width="200">
           <tr>
             <td><img src="images/visa.png" width="70" height="50" /><img src="images/mastercard.png" width="70" height="50" /></td>
             </tr>
         </table></td>
-        <td width="22"><input type="radio" name="Payment" value="radio" id="Payement_0" /></td>
-        <td width="200"><table width="200">
+        <td width="97">&nbsp;</td>
+        <td width="20">&nbsp;</td>
+        <td width="202"><table width="200">
           <tr>
-            <td><img src="images/Screen Shot 2015-09-08 at 12.30.31 pm.png" width="70" height="50" /></td>
+            <td>&nbsp;</td>
             </tr>
         </table></td>
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <td><input type="radio" name="Payment" value="radio" id="Payement_0" /></td>
+        <td colspan="2"><img src="images/Screen Shot 2015-09-08 at 12.30.31 pm.png" width="70" height="50" /></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
       <tr>
         <td>Name on Credit Card</td>
         <td>&nbsp;</td>
-        <td><input type="text" name="countrycard" id="countrycard" /></td>
+        <td colspan="2"><input type="text" name="countrycard" id="countrycard" /></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
       <tr>
         <td>Credit Card Number</td>
         <td>&nbsp;</td>
-        <td><input type="text" name="number" id="number" /></td>
+        <td colspan="2"><input type="text" name="number" id="number" /></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
       <tr>
         <td>Expirtion Date</td>
         <td>&nbsp;</td>
-        <td><select name="months" id="months">
+        <td colspan="2"><select name="months" id="months">
           <option>January</option>
           <option>February</option>
           <option>March</option>
@@ -186,7 +181,7 @@ body {
       <tr>
         <td>Name</td>
         <td>&nbsp;</td>
-        <td><input type="text" name="firstname" id="firstname" size="10" value="First Name" />
+        <td colspan="2"><input type="text" name="firstname" id="firstname" size="10" value="First Name" />
           <input type="text" name="last name" id="last name" size="10" value = "Last Name"/></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
@@ -194,21 +189,21 @@ body {
       <tr>
         <td>CVV</td>
         <td>&nbsp;</td>
-        <td><input type="text" name="CVV" id="CVV" size="5" value="xxx"/></td>
+        <td colspan="2"><input type="text" name="CVV" id="CVV" size="5" value="xxx"/></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
       <tr>
         <td>Country</td>
         <td>&nbsp;</td>
-        <td><input type="text" name="countrycard2" id="countrycard2" /></td>
+        <td colspan="2"><input type="text" name="countrycard2" id="countrycard2" /></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
       <tr>
         <td>Billing Address 1</td>
         <td>&nbsp;</td>
-        <td><textarea name="billing1" id="billing1" cols="45" rows="5"></textarea></td>
+        <td colspan="2"><textarea name="billing1" id="billing1" cols="45" rows="5"></textarea></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
@@ -216,21 +211,21 @@ body {
         <td>Billing Address 2<br />
           <em>(Optional)</em></td>
         <td>&nbsp;</td>
-        <td><textarea name="billing2" id="billing2" cols="45" rows="5"></textarea></td>
+        <td colspan="2"><textarea name="billing2" id="billing2" cols="45" rows="5"></textarea></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <td colspan="2">&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
       <tr>
         <td><input type="submit" name="Submit" id="Submit" value="Submit" /></td>
         <td>&nbsp;</td>
-        <td><input type="reset" name="Reset" id="Reset" value="Reset" /></td>
+        <td colspan="2"><input type="reset" name="Reset" id="Reset" value="Reset" /></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
