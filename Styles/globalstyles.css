@@ -4,6 +4,7 @@
 #main {
 	width: 900px;
 	margin: auto;
+	background-color: #FBFBFB;
 }
 
 #home, #products, #events, #cafe, #service, #order, #support, #about {
@@ -43,6 +44,7 @@
 
 #home_font_link {
 	color: #000;
+	text-decoration: underline;
 }
 
 .ban_temp {
@@ -72,6 +74,7 @@
 	font-variant: normal;
 	text-transform: none;
 	text-decoration: none;
+	margin-bottom: 5px;
 }
 .footer_follow {
 	font-family: Calibri;
@@ -125,4 +128,12 @@
      width: 710px;
 	 height: 500px;
 	 margin: auto;
+}
+.event_table {
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-bottom-style: none;
+	border-top-color: #999;
+	border-bottom-color: #999;
+	border-top-width: thin;
 }
